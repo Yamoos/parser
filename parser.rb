@@ -27,27 +27,14 @@ def img
 	end
 	rr
 end
-def lines(imge, name)
-	flow do
-		stack do
-			image imge
-		end
-		stack do
-			para name
-		end
-	end
-end
+
 
 Shoes.app height: 700, width: 400, title: "Lostfilm" do
 	stack margin: 10 do
 		image 'LostFilm.tv_trans_flat.png' 
 	end
 
-	img.each do |i|
-		get.each do |f|
-			lines(i, f)	
-		end
-	end
+	
 
 	stack margin: 5 do
 		@s = button "RELOAD!" do
